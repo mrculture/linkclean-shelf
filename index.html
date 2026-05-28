@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinkClean Shelf | Private Tracking Link Cleaner</title>
+    <meta
+      name="description"
+      content="Clean tracking parameters from copied URLs in your browser before sharing links."
+    >
+    <meta property="og:title" content="LinkClean Shelf">
+    <meta
+      property="og:description"
+      content="A browser-only UtilityShelf micro tool for cleaning tracking links before sharing."
+    >
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css?v=20260528-mvp1">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="LinkClean Shelf home">
+        <span class="brand-mark">U</span>
+        <span>
+          <strong>LinkClean Shelf</strong>
+          <small>by UtilityShelf</small>
+        </span>
+      </a>
+      <p class="privacy-note">Browser-only. Links are not uploaded.</p>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Link cleaner</p>
+        <h1 id="page-title">Remove tracking clutter from copied links.</h1>
+        <p class="lede">
+          Paste a messy URL and get a cleaner version without common tracking
+          parameters such as UTM tags, fbclid, gclid, msclkid, and newsletter IDs.
+        </p>
+      </section>
+
+      <section class="tool" aria-label="Link cleaning tool">
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Original Link</h2>
+            <button class="text-button" id="sampleButton" type="button">Load sample</button>
+          </div>
+          <textarea id="inputUrl" placeholder="Paste one or more links here..." aria-label="Original links"></textarea>
+        </div>
+
+        <div class="panel options">
+          <h2>Options</h2>
+          <label>
+            <input type="checkbox" id="removeTracking" checked>
+            <span>Remove tracking parameters</span>
+          </label>
+          <label>
+            <input type="checkbox" id="sortParams">
+            <span>Sort remaining parameters</span>
+          </label>
+          <label>
+            <input type="checkbox" id="trimPunctuation" checked>
+            <span>Trim trailing punctuation</span>
+          </label>
+          <button class="primary-button" id="cleanButton" type="button">Clean Links</button>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Cleaned Link</h2>
+            <button class="text-button" id="copyButton" type="button">Copy</button>
+          </div>
+          <textarea id="outputUrl" readonly placeholder="Cleaned links will appear here..." aria-label="Cleaned links"></textarea>
+          <p class="status" id="statusMessage" role="status" aria-live="polite"></p>
+          <dl class="summary" aria-label="Cleanup summary">
+            <div>
+              <dt>Links found</dt>
+              <dd id="summaryLinks">0</dd>
+            </div>
+            <div>
+              <dt>Params removed</dt>
+              <dd id="summaryParams">0</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="guide" aria-labelledby="guide-title">
+        <div>
+          <p class="eyebrow">Guide</p>
+          <h2 id="guide-title">Why Clean Links?</h2>
+          <p>
+            Copied URLs often contain campaign tags, ad click IDs, social tracking
+            values, and email marketing identifiers. Those parameters can make links
+            long, ugly, and more revealing than needed. LinkClean Shelf keeps useful
+            destination parameters while removing common tracking clutter.
+          </p>
+        </div>
+        <div class="cards">
+          <article>
+            <h3>Cleaner Sharing</h3>
+            <p>Shorter links are easier to read in emails, chats, documents, and posts.</p>
+          </article>
+          <article>
+            <h3>Privacy Hygiene</h3>
+            <p>Remove common click IDs before forwarding links to friends, clients, or public pages.</p>
+          </article>
+          <article>
+            <h3>Browser-Only</h3>
+            <p>The first version runs locally in your browser without sending pasted links away.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>LinkClean Shelf is a UtilityShelf micro utility for cleaner links.</p>
+      </div>
+    </footer>
+
+    <script src="app.js?v=20260528-mvp1"></script>
+  </body>
+</html>
