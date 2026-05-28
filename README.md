@@ -10,3 +10,20 @@ A browser-only UtilityShelf micro utility for cleaning tracking parameters from 
 - Keeps useful non-tracking parameters.
 - Runs locally in the browser.
 
+## Publishing
+
+Recommended public URL:
+
+```text
+https://linkclean-shelf.pages.dev/
+```
+
+Use Cloudflare Pages with:
+
+```text
+Framework preset: None
+Build command:
+Build output directory: /
+```
+
+See `PUBLISHING.md` for the deployment checklist.

@@ -223,7 +223,8 @@ textarea:focus {
   margin: 2px 0 0;
 }
 
-.guide {
+.guide,
+.utilityshelf-note {
   display: grid;
   gap: 24px;
   grid-template-columns: minmax(230px, 0.7fr) minmax(0, 1.3fr);
@@ -231,9 +232,18 @@ textarea:focus {
   padding: 24px;
 }
 
-.guide h2 {
+.guide h2,
+.utilityshelf-note h2 {
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   line-height: 1.1;
+}
+
+.utilityshelf-note {
+  background: #f0f4ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: none;
+  grid-template-columns: 1fr;
 }
 
 .cards {
@@ -252,12 +262,29 @@ textarea:focus {
   margin-bottom: 8px;
 }
 
+.legal-page {
+  max-width: 820px;
+}
+
+.legal-page h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.legal-page a,
+footer a {
+  color: var(--blue);
+}
+
 footer {
   border-top: 1px solid var(--line);
   padding: 22px clamp(18px, 4vw, 56px);
 }
 
 .footer-inner {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1380px;
 }
@@ -266,9 +293,20 @@ footer p {
   margin: 0;
 }
 
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
 @media (max-width: 1020px) {
   .tool,
   .guide,
+  .utilityshelf-note,
   .cards {
     grid-template-columns: 1fr;
   }
@@ -282,5 +320,10 @@ footer p {
 
   h1 {
     font-size: 2.25rem;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
