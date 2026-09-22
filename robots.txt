@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://linkclean-shelf.pages.dev/sitemap.xml
+Sitemap: https://linkclean.utilityshelf.site/sitemap.xml

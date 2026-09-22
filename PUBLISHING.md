@@ -13,5 +13,5 @@ After deployment:
 
 1. Confirm the homepage loads over HTTPS.
 2. Confirm `robots.txt` and `sitemap.xml` return HTTP 200.
-3. Submit `https://linkclean-shelf.pages.dev/sitemap.xml` in Google Search Console.
+3. Submit `https://linkclean.utilityshelf.site/sitemap.xml` in Google Search Console.
 4. Add Cloudflare Web Analytics from the Cloudflare dashboard if desired.

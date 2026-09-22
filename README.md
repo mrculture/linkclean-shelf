@@ -15,7 +15,7 @@ A browser-only UtilityShelf micro utility for cleaning tracking parameters from 
 Recommended public URL:
 
 ```text
-https://linkclean-shelf.pages.dev/
+https://linkclean.utilityshelf.site/
 ```
 
 Use Cloudflare Pages with:
